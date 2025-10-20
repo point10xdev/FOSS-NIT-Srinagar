@@ -1,18 +1,26 @@
-import { useState, useEffect, useRef,useCallback } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import Header from "../../../Components/Navbar/resizeableNavbar";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
+// 1. DEFINE THE TYPE for your state
+type TimeLeft = {
+  days: string;
+  hours: string;
+  minutes: string;
+  seconds: string;
+};
 
 function Hero() {
-  const targetDate = "2024-10-10T09:00:00";
+  const targetDate = "2025-11-01T10:00:00";
 
-  const calculateTimeLeft = () => {
+  // 2. ADD THE RETURN TYPE to the function
+  const calculateTimeLeft = (): TimeLeft => {
     const difference = +new Date(targetDate) - +new Date();
-    let timeLeft = {};
 
+    // 3. REFACTOR to return directly (this removes the ambiguous `let timeLeft = {}`)
     if (difference > 0) {
-      timeLeft = {
+      return {
         days: String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(
           2,
           "0"
@@ -27,17 +35,18 @@ function Hero() {
         seconds: String(Math.floor((difference / 1000) % 60)).padStart(2, "0"),
       };
     } else {
-      timeLeft = {
+      // This is the default/expired state
+      return {
         days: "00",
         hours: "00",
         minutes: "00",
         seconds: "00",
       };
     }
-
-    return timeLeft;
   };
 
+  // Now, useState(calculateTimeLeft()) correctly infers the type as `TimeLeft`
+  // and no longer thinks it can be `{}`.
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
@@ -48,7 +57,7 @@ function Hero() {
     return () => clearTimeout(timer);
   });
 
-// scrambling text animation 
+  // scrambling text animation
   const [scrambledText, setScrambledText] = useState("FOSS Srinagar");
   const textRef = useRef(null);
   const letters = "abcdefghijklmnopqrstuvwxyz";
@@ -57,13 +66,16 @@ function Hero() {
   const scrambleText = useCallback(() => {
     let iteration = 0;
     const interval = setInterval(() => {
-      setScrambledText(prev => 
-        prev.split("").map((letter, index) => {
-          if (index < iteration) {
-            return originalText[index];
-          }
-          return letters[Math.floor(Math.random() * 26)];
-        }).join("")
+      setScrambledText((prev) =>
+        prev
+          .split("")
+          .map((letter, index) => {
+            if (index < iteration) {
+              return originalText[index];
+            }
+            return letters[Math.floor(Math.random() * 26)];
+          })
+          .join("")
       );
 
       if (iteration >= originalText.length) {
@@ -94,11 +106,11 @@ function Hero() {
 
   return (
     <div
-      className="bg-cover bg-center  min-h-screen"
+      className="bg-cover bg-center  min-h-screen"
       style={{
         backgroundImage:
           "linear-gradient(to bottom, #000000 0%, #00000044 50%, #00000033 100%), url(/assets/hero-cover.jpeg)",
-      }} 
+      }}
     >
       <div>
         <Header />
@@ -109,28 +121,25 @@ function Hero() {
           data-aos-duration="2000"
           className="text-white text-xl ss:text-2xl md:text-4xl text-center overflow-visible xs:whitespace-nowrap"
         >
-          10
-          <sup className="text-white text-xl md:text-2xl">th </sup>& 11
-          <sup className="text-white text-xl md:text-2xl">th </sup>
-          Oct 2024
+          1<sup className="text-white text-xl md:text-2xl">st </sup>
+          Nov 2025
         </div>
-        <p 
+        <p
           ref={textRef}
           className="text-center text-5xl ss:text-7xl sm:text-8xl md:text-9xl mt-4 text-white font-neotriad font-extrabold overflow-visible textShadow"
         >
           {scrambledText}
         </p>
 
-        <p 
-          className="text-center text-2xl ss:text-3xl  mt-4 text-white font-kodeMono font-bold overflow-visible textShadow-sm"
-        >
-          TAGLINE
+        <p className="text-center text-2xl ss:text-3xl  mt-4 text-white font-kodeMono font-bold overflow-visible textShadow-sm">
+          Building the Future with Open Source
         </p>
 
         <div className="font-kodeMono mt-6 md:mt-10 flex justify-center">
           <div className="w-full min-w-150 mt-7 px-12 lg:px-40 flex flex-wrap gap-6 justify-between text-white font-bold overflow-hidden">
             <div data-aos="fade-down" className="text-center overflow-visible">
               <div className="block text-6xl md:text-9xl font-semibold overflow-visible">
+                {/* These errors are now fixed! */}
                 {timeLeft.days}
               </div>
               <div className=" block text-lg md:text-3xl overflow-visible textShadow-sm">

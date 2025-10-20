@@ -1,10 +1,11 @@
 
 import Hero from "./Components/Hero";
-// import About from "./Components/About";
+import About from "./Components/About";
 // import StickySocialSidebar from "./Components/StickySocialSidebar";
 
 // import Gallery from "./Components/Gallery";
-// import ExcitingEvents from "./Components/ExcitingEvents";
+import ExcitingEvents from "./Components/ExcitingEvents";
+import Footer from "../../Components/Footer"
 
 
 export default function Home() {
@@ -17,6 +18,12 @@ export default function Home() {
       <div className="background-image hidden md:block bg-[url('/group3.png')] w-[90rem] h-[36rem] top-[280%] -left-[2%] "></div> */}
       <div className="content">
           <Hero />
+           <About />
+          <ExcitingEvents /> 
+          {/* <EventsSection /> */}
+          {/* <Gallery/>
+          <StickySocialSidebar /> */}
+          <Footer /> 
       </div>
     </>
   );
