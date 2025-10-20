@@ -1,5 +1,6 @@
+// src/pages/Events/Events.jsx
 import { Route, Routes } from "react-router-dom";
-import EventCategory from "./pages/EventCategory";
+import EventsHome from "./components/EventsHome"; // Import the new main page
 import Competitions from "./pages/Competitions";
 import TalksAndWorkshops from "./pages/TalksAndWorkshops";
 import Performances from "./pages/Performances";
@@ -12,6 +13,16 @@ import PerformanceDetails from "./pages/Detailing/PerformanceDetails";
 import TalksAndWorkshopsDetails from "./pages/Detailing/TalksAndWorkshopsDetails";
 import WomenTech from "./pages/women in tech/WomenTech";
 
+// Import PageLayout for placeholder components
+import PageLayout from "../../Components/PageLayout"; 
+
+// Placeholder components for new routes
+const Workshops = () => <PageLayout title="Workshops"><div className="p-8 bg-white text-gray-800 text-center text-2xl">Workshops coming soon!</div></PageLayout>;
+const Meetups = () => <PageLayout title="Meetups"><div className="p-8 bg-white text-gray-800 text-center text-2xl">Meetups coming soon!</div></PageLayout>;
+const Hackathons = () => <PageLayout title="Hackathons"><div className="p-8 bg-white text-gray-800 text-center text-2xl">Hackathons coming soon!</div></PageLayout>;
+const Talks = () => <PageLayout title="Talks"><div className="p-8 bg-white text-gray-800 text-center text-2xl">Talks coming soon!</div></PageLayout>;
+
+
 export default function Events() {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top
@@ -20,7 +31,10 @@ export default function Events() {
     <>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<EventCategory />} />
+        {/* Updated root path to show EventsHome */}
+        <Route path="/" element={<EventsHome />} /> 
+
+        {/* Existing routes */}
         <Route path="/competitions" element={<Competitions />} />
         <Route path="/talks-and-workshops" element={<TalksAndWorkshops />} />
         <Route path="/performances" element={<Performances />} />
@@ -30,6 +44,12 @@ export default function Events() {
         <Route path="competitions/:index" element={<EventDetails />} />
         <Route path="performances/:index" element={<PerformanceDetails />} />
         <Route path="talks-and-workshops/:index" element={<TalksAndWorkshopsDetails />} />
+
+        {/* Added routes for new categories */}
+        <Route path="/workshops" element={<Workshops />} />
+        <Route path="/meetups" element={<Meetups />} />
+        <Route path="/hackathons" element={<Hackathons />} />
+        <Route path="/talks" element={<Talks />} />
       </Routes>
     </>
   );
