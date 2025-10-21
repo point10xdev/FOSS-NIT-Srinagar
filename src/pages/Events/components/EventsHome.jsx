@@ -34,7 +34,8 @@ export default function EventsHome() {
           // Pass the title "Upcoming Events" to the layout
           <EventsPageLayout events={upcomingEvents} title="Upcoming Events" />
         ) : (
-          <div className="text-center py-10 bg-background ShadowLarge">
+          // MODIFIED: Removed "bg-background ShadowLarge"
+          <div className="text-center py-10">
             <p className="text-gray-700 text-4xl font-figtree font-bold">Upcoming Events</p>
             <p className="text-gray-600 text-lg mt-4">No upcoming events. Stay tuned!</p>
           </div>

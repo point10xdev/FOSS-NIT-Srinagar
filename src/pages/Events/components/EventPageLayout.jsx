@@ -4,7 +4,8 @@ import PropTypes from "prop-types";
 // Add 'title' prop with a default value
 const EventsPageLayout = ({ events, title = "Event List" }) => {
     return (
-      <div className="bg-background ShadowLarge">
+      // MODIFIED: Removed "bg-background ShadowLarge"
+      <div className="">
         <div className="font-playfair px-8 pt-8 ">
           <p className="text-gray-700 textShadow-md font-extrabold font-figtree text-4xl md:text-5xl leading-normal">
             {title} {/* Use dynamic title */}
