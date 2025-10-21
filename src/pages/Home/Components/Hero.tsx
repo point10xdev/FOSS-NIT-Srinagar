@@ -1,9 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import Header from "../../../Components/Navbar/resizeableNavbar";
-import Aos from "aos"; // Keep this import
-import "aos/dist/aos.css"; // Keep this import
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-// 1. DEFINE THE TYPE for your state
 type TimeLeft = {
   days: string;
   hours: string;
@@ -14,28 +13,17 @@ type TimeLeft = {
 function Hero() {
   const targetDate = "2025-11-01T10:00:00";
 
-  // 2. ADD THE RETURN TYPE to the function
   const calculateTimeLeft = (): TimeLeft => {
     const difference = +new Date(targetDate) - +new Date();
 
-    // 3. REFACTOR to return directly (this removes the ambiguous `let timeLeft = {}`)
     if (difference > 0) {
       return {
-        days: String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(
-          2,
-          "0"
-        ),
-        hours: String(
-          Math.floor((difference / (1000 * 60 * 60)) % 24)
-        ).padStart(2, "0"),
-        minutes: String(Math.floor((difference / 1000 / 60) % 60)).padStart(
-          2,
-          "0"
-        ),
+        days: String(Math.floor(difference / (1000 * 60 * 60 * 24))).padStart(2, "0"),
+        hours: String(Math.floor((difference / (1000 * 60 * 60)) % 24)).padStart(2, "0"),
+        minutes: String(Math.floor((difference / 1000 / 60) % 60)).padStart(2, "0"),
         seconds: String(Math.floor((difference / 1000) % 60)).padStart(2, "0"),
       };
     } else {
-      // This is the default/expired state
       return {
         days: "00",
         hours: "00",
@@ -45,8 +33,6 @@ function Hero() {
     }
   };
 
-  // Now, useState(calculateTimeLeft()) correctly infers the type as `TimeLeft`
-  // and no longer thinks it can be `{}`.
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
 
   useEffect(() => {
@@ -92,12 +78,9 @@ function Hero() {
     return () => clearInterval(intervalId);
   }, [scrambleText]);
 
-  // Animate on scroll initialization
-  // REMOVED Aos.init() CALL FROM HERE
-
   return (
     <div
-      className="bg-cover bg-center  min-h-screen"
+      className="bg-cover bg-center min-h-screen"
       style={{
         backgroundImage:
           "linear-gradient(to bottom, #000000 0%, #00000044 50%, #00000033 100%), url(/assets/hero-cover.jpeg)",
@@ -110,13 +93,14 @@ function Hero() {
         <div
           data-aos="fade-down"
           data-aos-duration="2000"
-          data-aos-anchor-placement="top-bottom" // This overrides global to animate on load
-          data-aos-once="true" // This overrides global to animate only once
+          data-aos-anchor-placement="top-bottom"
+          data-aos-once="true"
           className="text-white text-xl ss:text-2xl md:text-4xl text-center overflow-visible xs:whitespace-wrap"
         >
           1<sup className="text-white text-xl md:text-2xl">st </sup>
           Nov 2025
         </div>
+
         <p
           ref={textRef}
           className="text-center text-5xl ss:text-7xl sm:text-8xl md:text-9xl mt-4 text-white font-neotriad font-extrabold overflow-visible textShadow"
@@ -124,18 +108,35 @@ function Hero() {
           {scrambledText}
         </p>
 
-        <p className="text-center text-2xl ss:text-3xl  mt-4 text-white font-kodeMono font-bold overflow-visible textShadow-sm">
+        <p className="text-center text-2xl ss:text-3xl mt-4 text-white font-kodeMono font-bold overflow-visible textShadow-sm">
           Building the Future with Open Source
         </p>
 
         <div className="font-kodeMono mt-6 md:mt-10 flex justify-center">
-          <div className="w-full min-w-150 mt-7 px-12 lg:px-40 flex flex-wrap gap-6 justify-between text-white font-bold overflow-hidden">
+
+          {/* --- MOBILE VIEW --- */}
+          <div
+            className="md:hidden w-full mt-7 px-4 flex-col text-white font-bold overflow-hidden text-center"
+            data-aos="fade-down"
+            data-aos-delay="100"
+          >
+            <div className="block text-6xl ss:text-7xl font-semibold overflow-visible">
+              {timeLeft.days}:{timeLeft.hours}:{timeLeft.minutes}
+            </div>
+            <div className="flex justify-center gap-4 ss:gap-8 text-lg ss:text-xl overflow-visible textShadow-sm mt-2">
+              <span className="flex-1">DAYS</span>
+              <span className="flex-1">HOURS</span>
+              <span className="flex-1">MINUTES</span>
+            </div>
+          </div>
+
+          {/* --- DESKTOP VIEW --- */}
+          <div className="w-full min-w-150 mt-7 px-12 lg:px-40 hidden md:flex flex-wrap gap-6 justify-between text-white font-bold overflow-hidden">
             <div data-aos="fade-down" className="text-center overflow-visible">
               <div className="block text-6xl md:text-9xl font-semibold overflow-visible">
-                {/* These errors are now fixed! */}
                 {timeLeft.days}
               </div>
-              <div className=" block text-lg md:text-3xl overflow-visible textShadow-sm">
+              <div className="block text-lg md:text-3xl overflow-visible textShadow-sm">
                 DAYS
               </div>
             </div>
@@ -159,7 +160,7 @@ function Hero() {
               <div className="block text-6xl md:text-9xl font-semibold overflow-visible">
                 {timeLeft.minutes}
               </div>
-              <div className=" block text-lg md:text-3xl overflow-visible textShadow-sm">
+              <div className="block text-lg md:text-3xl overflow-visible textShadow-sm">
                 MINUTES
               </div>
             </div>
@@ -171,7 +172,7 @@ function Hero() {
               <div className="block text-6xl md:text-9xl font-semibold overflow-visible">
                 {timeLeft.seconds}
               </div>
-              <div className=" block text-lg md:text-3xl overflow-visible textShadow-sm">
+              <div className="block text-lg md:text-3xl overflow-visible textShadow-sm">
                 SECONDS
               </div>
             </div>
