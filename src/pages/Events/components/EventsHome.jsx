@@ -2,7 +2,7 @@
 import PageLayout from "../../../Components/PageLayout";
 import EventsPageLayout from "./EventPageLayout";
 import CategoryCard from "./CategoryCard";
-import { eventCategories } from "../../../constants/event-categories"; 
+import { eventCategories } from "../../../constants/event-category"; 
 
 // Mock data for upcoming events - you can replace this with a data fetch
 const upcomingEvents = [
