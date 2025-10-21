@@ -1,19 +1,10 @@
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
+// REMOVED useEffect
+import Aos from "aos"; // Keep this
+import "aos/dist/aos.css"; // Keep this
 
 const Card = ({ event, index }) => {
-  useEffect(() => {
-    Aos.init({
-      duration: 1000,
-      anchorPlacement: "top-center",
-      disable: "Phone",
-      startEvent: "DOMContentLoaded",
-      easing: "ease-out",
-      mirror: true,
-    });
-  }, []);
+  // REMOVED Aos.init() CALL FROM HERE
 
   return (
     <div

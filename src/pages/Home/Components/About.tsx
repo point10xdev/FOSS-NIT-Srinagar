@@ -1,18 +1,9 @@
-import Aos from "aos";
-import "aos/dist/aos.css"
-import { useEffect } from "react";
+import Aos from "aos"; // Keep this
+import "aos/dist/aos.css"; // Keep this
+// REMOVED useEffect
 
 function About() {
-  useEffect(() => {
-    Aos.init({
-      duration: 1000,
-      anchorPlacement: "top-center",
-      disable: "Phone",
-      startEvent: "DOMContentLoaded",
-      easing: "ease-out",
-      mirror: true,
-    });
-  }, []);
+  // REMOVED Aos.init() CALL FROM HERE
   return (
     <div className='px-4 sm:px-0 flex justify-center items-center'>
       <div data-aos="fade-down" className='p-8 my-40 bg-background sm:p-12 md:w-3/5 sm:w-4/5  ShadowLarge'>

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import Header from "../../../Components/Navbar/resizeableNavbar";
-import Aos from "aos";
-import "aos/dist/aos.css";
+import Aos from "aos"; // Keep this import
+import "aos/dist/aos.css"; // Keep this import
 
 // 1. DEFINE THE TYPE for your state
 type TimeLeft = {
@@ -93,16 +93,7 @@ function Hero() {
   }, [scrambleText]);
 
   // Animate on scroll initialization
-  useEffect(() => {
-    Aos.init({
-      duration: 1000,
-      anchorPlacement: "top-center",
-      disable: "Phone",
-      startEvent: "DOMContentLoaded",
-      easing: "ease-out",
-      mirror: true,
-    });
-  }, []);
+  // REMOVED Aos.init() CALL FROM HERE
 
   return (
     <div
@@ -119,7 +110,9 @@ function Hero() {
         <div
           data-aos="fade-down"
           data-aos-duration="2000"
-          className="text-white text-xl ss:text-2xl md:text-4xl text-center overflow-visible xs:whitespace-nowrap"
+          data-aos-anchor-placement="top-bottom" // This overrides global to animate on load
+          data-aos-once="true" // This overrides global to animate only once
+          className="text-white text-xl ss:text-2xl md:text-4xl text-center overflow-visible xs:whitespace-wrap"
         >
           1<sup className="text-white text-xl md:text-2xl">st </sup>
           Nov 2025

@@ -1,21 +1,12 @@
 import { Link } from "react-router-dom";
-import Aos from "aos";
-import "aos/dist/aos.css"
-import { useEffect } from "react";
+import Aos from "aos"; // Keep this
+import "aos/dist/aos.css"; // Keep this
+// REMOVED useEffect
 import PropTypes from "prop-types";
 
 // Added 'description' prop
 const CategoryCard = ({ img, title, description, url, index }) => {
-  useEffect(() => {
-    Aos.init({
-      duration: 1000,
-      anchorPlacement: "top-center",
-      disable: "Phone",
-      startEvent: "DOMContentLoaded",
-      easing: "ease-out",
-      mirror: true,
-    });
-  }, []);
+  // REMOVED Aos.init() CALL FROM HERE
   return (
     // Set a consistent width and ensure image covers
     <div data-aos="fade-down" data-aos-delay={index*100} className="mb-5 CardShadow w-full sm:w-80 flex flex-col">
