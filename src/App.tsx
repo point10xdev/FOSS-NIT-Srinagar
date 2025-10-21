@@ -6,7 +6,7 @@ import Home from "./pages/Home/Home";
 import Blogs from "./pages/Blogs/Blogs"
 import Events from './pages/Events/Events'
 import Team from './pages/Team/Team' 
-import About from "./pages/Home/Components/About"; // Import About
+import About from "./pages/About/AboutPage"; // Import About
 import './App.css'
 // import Contact from "./pages/contact/Contact";
 // import Schedule from "./pages/schedule/Schedule";

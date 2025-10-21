@@ -1,4 +1,3 @@
-// src/constants/team-members.ts
 export const teamMembers = [
   {
     "id": 1,

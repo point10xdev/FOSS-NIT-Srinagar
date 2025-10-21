@@ -4,8 +4,9 @@ import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 export default function TeamCard({ name, role, image, socials }) {
   return (
     <>
+      {/* This div is transparent */}
       <div
-        className="rounded-xl bg-[url('/common/background-2.png')] bg-white flex flex-col items-center BoxShadow w-[280px] md:w-[310px] px-4 py-4 mb-6"
+        className="rounded-xl bg-transparent flex flex-col items-center w-[280px] md:w-[310px] px-4 py-4 mb-6"
       >
         <img
           loading="lazy"
