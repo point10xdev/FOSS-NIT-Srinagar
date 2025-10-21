@@ -1,46 +1,68 @@
 export const teamMembers = [
   {
     "id": 1,
-    "name": "Aadil Rasheed",
-    "role": "Lead Organizer",
-    "image": "/team/placeholder.jpg", // Create a placeholder image in public/team/
+    "name": "Skibidi Sigma",
+    "role": "Rizz Executive Officer",
+    "image": "/team/placeholder.jpg",
     "socials": {
-      "linkedin": "https://linkedin.com/in/",
-      "github": "https://github.com/",
-      "twitter": "https://twitter.com/"
+      "linkedin": "https://linkedin.com/in/realrizzler",
+      "github": "https://github.com/gyattdev",
+      "twitter": "https://twitter.com/SkibidiSigmaCEO"
     }
   },
   {
     "id": 2,
-    "name": "Basit Ali",
-    "role": "Web Lead",
-    "image": "/team/placeholder.jpg", // Placeholder image
+    "name": "Ohio Coder",
+    "role": "Backend Menace",
+    "image": "/team/placeholder.jpg",
     "socials": {
-      "linkedin": "https://linkedin.com/in/",
-      "github": "https://github.com/",
-      "twitter": "https://twitter.com/"
+      "linkedin": "https://linkedin.com/in/ohiocoder",
+      "github": "https://github.com/brofromohio",
+      "twitter": "https://twitter.com/realohioapi"
     }
   },
   {
     "id": 3,
-    "name": "Fiza",
-    "role": "Design Lead",
-    "image": "/team/placeholder.jpg", // Placeholder image
+    "name": "Gigachad Dev",
+    "role": "Frontend Gym Enthusiast",
+    "image": "/team/placeholder.jpg",
     "socials": {
-      "linkedin": "https://linkedin.com/in/",
-      "github": "https://github.com/",
-      "twitter": "https://twitter.com/"
+      "linkedin": "https://linkedin.com/in/gigachaddev",
+      "github": "https://github.com/alphaUI",
+      "twitter": "https://twitter.com/ChadReactJS"
     }
   },
   {
     "id": 4,
-    "name": "Mohsin",
-    "role": "PR & Outreach",
-    "image": "/team/placeholder.jpg", // Placeholder image
+    "name": "NPC Intern",
+    "role": "Workflow NPC / Coffee Loader",
+    "image": "/team/placeholder.jpg",
     "socials": {
-      "linkedin": "https://linkedin.com/in/",
-      "github": "https://github.com/",
-      "twitter": "https://twitter.com/"
+      "linkedin": "https://linkedin.com/in/justanpc",
+      "github": "https://github.com/autoclickloop",
+      "twitter": "https://twitter.com/NPC_Workflow"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Blyatt Designer",
+    "role": "Chief Aesthetic Overlord",
+    "image": "/team/placeholder.jpg",
+    "socials": {
+      "linkedin": "https://linkedin.com/in/gyattaesthetic",
+      "github": "https://github.com/dripui",
+      "twitter": "https://twitter.com/PixelRizz"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Fanum Taxman",
+    "role": "Budget W Rizz Coordinator",
+    "image": "/team/placeholder.jpg",
+    "socials": {
+      "linkedin": "https://linkedin.com/in/fanumtaxman",
+      "github": "https://github.com/TaxedUp",
+      "twitter": "https://twitter.com/realfanumtax"
     }
   }
 ];
