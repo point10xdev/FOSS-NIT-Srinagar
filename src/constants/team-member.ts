@@ -1,68 +1,235 @@
 export const teamMembers = [
   {
     "id": 1,
-    "name": "Skibidi Sigma",
-    "role": "Rizz Executive Officer",
-    "image": "/team/placeholder.jpg",
+    "name": "Akshit Bhardwaj",
+    "role": "Core Team Member",
+    "image": "assets/team-pfp/akshit.jpg",
     "socials": {
-      "linkedin": "https://linkedin.com/in/realrizzler",
-      "github": "https://github.com/gyattdev",
-      "twitter": "https://twitter.com/SkibidiSigmaCEO"
+      "linkedin": "https://www.linkedin.com/in/akshitbhardwaj257448/",
+      "github": "",
+      "Foss United": "https://fossunited.org/u/akshit_bhardwaj"
     }
   },
   {
     "id": 2,
-    "name": "Ohio Coder",
-    "role": "Backend Menace",
-    "image": "/team/placeholder.jpg",
+    "name": "Ashutosh",
+    "role": "Core Team Member",
+    "image": "assets/team-pfp/ashutosh.jpg",
     "socials": {
-      "linkedin": "https://linkedin.com/in/ohiocoder",
-      "github": "https://github.com/brofromohio",
-      "twitter": "https://twitter.com/realohioapi"
+      "linkedin": "",
+      "github": "",
+      "Foss United": "https://fossunited.org/u/ashutosh"
     }
   },
   {
     "id": 3,
-    "name": "Gigachad Dev",
-    "role": "Frontend Gym Enthusiast",
-    "image": "/team/placeholder.jpg",
+    "name": "Aman Kumar Yadav",
+    "role": "Core Team Member",
+    "image": "assets/team-pfp/aman.jpg",
     "socials": {
-      "linkedin": "https://linkedin.com/in/gigachaddev",
-      "github": "https://github.com/alphaUI",
-      "twitter": "https://twitter.com/ChadReactJS"
+      "linkedin": "https://www.linkedin.com/in/aman-kumar-yadav010/",
+      "github": "https://github.com/AI-Alan",
+      "Foss United": "https://fossunited.org/u/aman_ky"
     }
   },
   {
     "id": 4,
-    "name": "NPC Intern",
-    "role": "Workflow NPC / Coffee Loader",
-    "image": "/team/placeholder.jpg",
+    "name": "Janvi Sharma",
+    "role": "Core Team Member",
+    "image": "assets/team-pfp/janvi.jpg",
     "socials": {
-      "linkedin": "https://linkedin.com/in/justanpc",
-      "github": "https://github.com/autoclickloop",
-      "twitter": "https://twitter.com/NPC_Workflow"
+      "linkedin": "https://www.linkedin.com/in/janvi-sharma018/",
+      "github": "",
+      "Foss United": "https://fossunited.org/u/janvi_sharma"
     }
   },
   {
     "id": 5,
-    "name": "Blyatt Designer",
-    "role": "Chief Aesthetic Overlord",
-    "image": "/team/placeholder.jpg",
+    "name": "Ankita Kuntal",
+    "role": "Graphic Designer",
+    "image": "assets/team-pfp/ankitak.jpg",
     "socials": {
-      "linkedin": "https://linkedin.com/in/gyattaesthetic",
-      "github": "https://github.com/dripui",
-      "twitter": "https://twitter.com/PixelRizz"
+      "linkedin": "https://www.linkedin.com/in/ankita-kuntal/",
+      "github": "https://github.com/Ankita-kuntal",
+      "Foss United": "https://fossunited.org/u/ankita_kuntal"
     }
   },
   {
     "id": 6,
-    "name": "Fanum Taxman",
-    "role": "Budget W Rizz Coordinator",
-    "image": "/team/placeholder.jpg",
+    "name": "Vinod Akshat",
+    "role": "Content Writer",
+    "image": "assets/team-pfp/akshay.jpg",
     "socials": {
-      "linkedin": "https://linkedin.com/in/fanumtaxman",
-      "github": "https://github.com/TaxedUp",
-      "twitter": "https://twitter.com/realfanumtax"
+      "linkedin": "https://www.linkedin.com/in/vinod-akshat/",
+      "github": "https://github.com/akshayrivers",
+      "Foss United": "https://fossunited.org/u/akshayrivers"
     }
-  }
+  },
+  {
+    "id": 7,
+    "name": "Ankrit Jarngal",
+    "role": "Core Team Member",
+    "image": "assets/team-pfp/ankrit.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/vinod-akshat/",
+      "github": "https://github.com/akshayrivers",
+      "Foss United": "https://fossunited.org/u/akshayrivers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Ashmitha Reddy Palreddy",
+    "role": "Core Team Member",
+    "image": "assets/team-pfp/ashmitha.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/ashmitha-reddy-palreddy-224733347/",
+      "github": "https://github.com/ashmithapalreddy",
+      "Foss United": "https://fossunited.org/u/ashmithapalreddy"
+    }
+  },
+   {
+    "id": 9,
+    "name": "Harman Kour",
+    "role": "Core Team Member",
+    "image": "assets/team-pfp/harman.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/harmandeep-kour-609278343/",
+      "github": "",
+      "Foss United": "https://fossunited.org/u/harman_17"
+    }
+  },
+     {
+    "id": 10,
+    "name": "Ankita Pulkit",
+    "role": "Graphic Designer",
+    "image": "assets/team-pfp/ankitap.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/ankita-pulkit-a11b3438b/",
+      "github": "",
+      "Foss United": "https://fossunited.org/u/ankita_pulkit"
+    }
+  },
+   {
+    "id": 11,
+    "name": "Vaneesa Kaur",
+    "role": "Graphic Designer",
+    "image": "assets/team-pfp/vaneesa.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/vaneesa-kour-4355b7386/",
+      "github": "",
+      "Foss United": "https://fossunited.org/u/vaneesa_kaur"
+    }
+  },
+   {
+    "id": 12,
+    "name": "Sumit Salgotra",
+    "role": "Core Team Member",
+    "image": "assets/team-pfp/sumit.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/sumit-salgotra-24912b313/",
+      "github": "",
+      "Foss United": "https://fossunited.org/u/sumit_salgotra"
+    }
+  },
+   
+   {
+    "id": 13,
+    "name": "Lucky Thukran",
+    "role": "Core Team Member",
+    "image": "assets/team-pfp/lucky.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/lucky-thukran-79206538a/",
+      "github": "",
+      "Foss United": "https://fossunited.org/u/lucky_thukran"
+    }
+  },
+   {
+    "id": 14,
+    "name": "Anupriya Tripathi",
+    "role": "Volunteer",
+    "image": "assets/team-pfp/anupriya.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/anupriya-tripathi-b1746938b/",
+      "github": "",
+      "Foss United": "https://fossunited.org/u/anupriya_tripathi"
+    }
+  },
+   {
+    "id": 15,
+    "name": "Ishika Saraswat",
+    "role": "Volunteer",
+    "image": "assets/team-pfp/ishika.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/ishika-saraswat-22a110349/",
+      "github": "",
+      "Foss United": "https://fossunited.org/u/ishika_04"
+    }
+  },
+   {
+    "id": 16,
+    "name": "Manjot Singh",
+    "role": "Volunteer",
+    "image": "assets/team-pfp/manjot.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/manjot-singh-805031372/",
+      "github": "",
+      "Foss United": "https://fossunited.org/u/manjot_singh"
+    }
+  },
+   {
+    "id": 17,
+    "name": "Manshu Kataria",
+    "role": "Volunteer",
+    "image": "assets/team-pfp/manshu.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/manshu-kataria-89b46938b/",
+      "github": "",
+      "Foss United": "https://fossunited.org/u/manshu_kataria"
+    }
+  },
+   {
+    "id": 18,
+    "name": "Prince Kumar",
+    "role": "Volunteer",
+    "image": "assets/team-pfp/prince.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/prince-arya-0172161b8/",
+      "github": "https://github.com/princedevarya",
+      "Foss United": "https://fossunited.org/u/prince_arya"
+    }
+  },
+   {
+    "id": 19,
+    "name": "Simranjeet Singh",
+    "role": "Volunteer",
+    "image": "assets/team-pfp/simranjeet.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/simranjeet-singh-508bb838b/",
+      "github": "https://github.com/simranjeet2569-dev",
+      "Foss United": "https://fossunited.org/u/009_simranjeet_singh"
+    }
+  },
+   
+   {
+    "id": 20,
+    "name": "Vivek Sharma",
+    "role": "Content Writer",
+    "image": "assets/team-pfp/vivek.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/vivek-sharma-025565201/",
+      "github": "",
+      "Foss United": "https://fossunited.org/u/viveksharma6"
+    }
+  },
+   {
+    "id": 21,
+    "name": "Zaid Khan",
+    "role": "Graphic Designer",
+    "image": "assets/team-pfp/zaid.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/zaid-khan-0873591ba/",
+      "github": "https://github.com/diaznakh",
+      "Foss United": "https://fossunited.org/u/zaid_khan"
+    }
+  },
 ];

@@ -1,4 +1,3 @@
-// src/constants/event-categories.js
 export const eventCategories = [
   {
     id: 1,

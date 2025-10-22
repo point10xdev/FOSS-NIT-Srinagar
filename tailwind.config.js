@@ -15,7 +15,8 @@ export default {
       fontFamily: {
         neotriad: ['Neotriad Regular', 'serif'],
         kodeMono : ["Kode Mono", 'monospace'],
-        figtree : ["Figtree", 'sans-serif']
+        figtree : ["Figtree", 'sans-serif'],
+        pressStart: ['"Press Start 2P"', 'system-ui'],
       }
     },
     screens: {

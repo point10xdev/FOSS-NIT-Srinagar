@@ -103,7 +103,7 @@ function Hero() {
 
         <p
           ref={textRef}
-          className="text-center text-5xl ss:text-7xl sm:text-8xl md:text-9xl mt-4 text-white font-neotriad font-extrabold overflow-visible textShadow"
+          className="text-center text-3xl ss:text-5xl sm:text-6xl md:text-7xl mt-4 text-white font-pressStart font-extrabold overflow-visible textShadow"
         >
           {scrambledText}
         </p>

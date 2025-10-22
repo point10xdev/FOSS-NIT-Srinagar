@@ -1,12 +1,12 @@
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
-import { useEffect } from "react"; // Import useEffect
-import Aos from "aos"; // Import Aos
+import { useEffect } from "react"; 
+import Aos from "aos"; 
 import "aos/dist/aos.css"; // Import Aos styles
 import Home from "./pages/Home/Home";
 import Blogs from "./pages/Blogs/Blogs"
 import Events from './pages/Events/Events'
 import Team from './pages/Team/Team' 
-import About from "./pages/About/AboutPage"; // Import About
+import About from "./pages/About/AboutPage"; 
 import './App.css'
 // import Contact from "./pages/contact/Contact";
 // import Schedule from "./pages/schedule/Schedule";
