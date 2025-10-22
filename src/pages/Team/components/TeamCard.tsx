@@ -1,10 +1,15 @@
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
+// <-- 1. REMOVE THIS IMPORT.
+// We will reference the file directly from the 'public' folder.
+// import Fossunited from "../../../../public/fossunited-white.svg"; 
+
 // Define interfaces for the props
 interface Socials {
   linkedin?: string;
   github?: string;
   twitter?: string;
+  Fossunited?: string; // Keeping your original 'Fossunited' casing
 }
 
 interface TeamCardProps {
@@ -17,7 +22,6 @@ interface TeamCardProps {
 export default function TeamCard({ name, role, image, socials }: TeamCardProps) {
   return (
     <>
-      {/* This div is transparent */}
       <div
         className="rounded-xl bg-transparent flex flex-col items-center w-[280px] md:w-[310px] px-4 py-4 mb-6"
       >
@@ -54,20 +58,38 @@ export default function TeamCard({ name, role, image, socials }: TeamCardProps) 
                 <FaGithub size={24} />
               </a>
             )}
-            {socials.twitter && (
+
+            {/* <-- 2. THIS BLOCK IS UPDATED --> */}
+            {socials.Fossunited && (
               <a
-                href={socials.twitter}
+                href={socials.Fossunited}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary hover:text-white transition duration-300"
               >
-                <FaTwitter size={24} />
+                {/* This div uses the hover classes for the background color,
+                  and the style attribute applies your SVG as a mask.
+                */}
+                <div 
+                  className="w-6 h-6 bg-primary hover:bg-white transition duration-300"
+                  style={{
+                    // Use the direct public path.
+                    maskImage: `url("/fossunited-white.svg")`,
+                    WebkitMaskImage: `url("/fossunited-white.svg")`,
+                    maskSize: 'contain',
+                    WebkitMaskSize: 'contain',
+                    maskRepeat: 'no-repeat',
+                    WebkitMaskRepeat: 'no-repeat',
+                    maskPosition: 'center',
+                    WebkitMaskPosition: 'center',
+                  }}
+                ></div>
               </a>
             )}
+            {/* <-- END OF UPDATED BLOCK --> */}
+
           </div>
         </div>
       </div>
     </>
   );
 }
-

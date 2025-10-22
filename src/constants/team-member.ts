@@ -7,7 +7,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/akshitbhardwaj257448/",
       "github": "",
-      "Foss United": "https://fossunited.org/u/akshit_bhardwaj"
+      "Fossunited": "https://fossunited.org/u/akshit_bhardwaj"
     }
   },
   {
@@ -18,7 +18,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "",
       "github": "",
-      "Foss United": "https://fossunited.org/u/ashutosh"
+      "Fossunited": "https://fossunited.org/u/ashutosh"
     }
   },
   {
@@ -29,7 +29,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/aman-kumar-yadav010/",
       "github": "https://github.com/AI-Alan",
-      "Foss United": "https://fossunited.org/u/aman_ky"
+      "Fossunited": "https://fossunited.org/u/aman_ky"
     }
   },
   {
@@ -40,7 +40,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/janvi-sharma018/",
       "github": "",
-      "Foss United": "https://fossunited.org/u/janvi_sharma"
+      "Fossunited": "https://fossunited.org/u/janvi_sharma"
     }
   },
   {
@@ -51,7 +51,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/ankita-kuntal/",
       "github": "https://github.com/Ankita-kuntal",
-      "Foss United": "https://fossunited.org/u/ankita_kuntal"
+      "Fossunited": "https://fossunited.org/u/ankita_kuntal"
     }
   },
   {
@@ -62,7 +62,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/vinod-akshat/",
       "github": "https://github.com/akshayrivers",
-      "Foss United": "https://fossunited.org/u/akshayrivers"
+      "Fossunited": "https://fossunited.org/u/akshayrivers"
     }
   },
   {
@@ -73,7 +73,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/vinod-akshat/",
       "github": "https://github.com/akshayrivers",
-      "Foss United": "https://fossunited.org/u/akshayrivers"
+      "Fossunited": "https://fossunited.org/u/akshayrivers"
     }
   },
   {
@@ -84,7 +84,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/ashmitha-reddy-palreddy-224733347/",
       "github": "https://github.com/ashmithapalreddy",
-      "Foss United": "https://fossunited.org/u/ashmithapalreddy"
+      "Fossunited": "https://fossunited.org/u/ashmithapalreddy"
     }
   },
    {
@@ -95,7 +95,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/harmandeep-kour-609278343/",
       "github": "",
-      "Foss United": "https://fossunited.org/u/harman_17"
+      "Fossunited": "https://fossunited.org/u/harman_17"
     }
   },
      {
@@ -106,7 +106,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/ankita-pulkit-a11b3438b/",
       "github": "",
-      "Foss United": "https://fossunited.org/u/ankita_pulkit"
+      "Fossunited": "https://fossunited.org/u/ankita_pulkit"
     }
   },
    {
@@ -117,7 +117,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/vaneesa-kour-4355b7386/",
       "github": "",
-      "Foss United": "https://fossunited.org/u/vaneesa_kaur"
+      "Fossunited": "https://fossunited.org/u/vaneesa_kaur"
     }
   },
    {
@@ -128,7 +128,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/sumit-salgotra-24912b313/",
       "github": "",
-      "Foss United": "https://fossunited.org/u/sumit_salgotra"
+      "Fossunited": "https://fossunited.org/u/sumit_salgotra"
     }
   },
    
@@ -140,7 +140,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/lucky-thukran-79206538a/",
       "github": "",
-      "Foss United": "https://fossunited.org/u/lucky_thukran"
+      "Fossunited": "https://fossunited.org/u/lucky_thukran"
     }
   },
    {
@@ -151,7 +151,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/anupriya-tripathi-b1746938b/",
       "github": "",
-      "Foss United": "https://fossunited.org/u/anupriya_tripathi"
+      "Fossunited": "https://fossunited.org/u/anupriya_tripathi"
     }
   },
    {
@@ -162,7 +162,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/ishika-saraswat-22a110349/",
       "github": "",
-      "Foss United": "https://fossunited.org/u/ishika_04"
+      "Fossunited": "https://fossunited.org/u/ishika_04"
     }
   },
    {
@@ -173,7 +173,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/manjot-singh-805031372/",
       "github": "",
-      "Foss United": "https://fossunited.org/u/manjot_singh"
+      "Fossunited": "https://fossunited.org/u/manjot_singh"
     }
   },
    {
@@ -184,7 +184,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/manshu-kataria-89b46938b/",
       "github": "",
-      "Foss United": "https://fossunited.org/u/manshu_kataria"
+      "Fossunited": "https://fossunited.org/u/manshu_kataria"
     }
   },
    {
@@ -195,7 +195,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/prince-arya-0172161b8/",
       "github": "https://github.com/princedevarya",
-      "Foss United": "https://fossunited.org/u/prince_arya"
+      "Fossunited": "https://fossunited.org/u/prince_arya"
     }
   },
    {
@@ -206,7 +206,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/simranjeet-singh-508bb838b/",
       "github": "https://github.com/simranjeet2569-dev",
-      "Foss United": "https://fossunited.org/u/009_simranjeet_singh"
+      "Fossunited": "https://fossunited.org/u/009_simranjeet_singh"
     }
   },
    
@@ -218,7 +218,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/vivek-sharma-025565201/",
       "github": "",
-      "Foss United": "https://fossunited.org/u/viveksharma6"
+      "Fossunited": "https://fossunited.org/u/viveksharma6"
     }
   },
    {
@@ -229,7 +229,7 @@ export const teamMembers = [
     "socials": {
       "linkedin": "https://www.linkedin.com/in/zaid-khan-0873591ba/",
       "github": "https://github.com/diaznakh",
-      "Foss United": "https://fossunited.org/u/zaid_khan"
+      "Fossunited": "https://fossunited.org/u/zaid_khan"
     }
   },
 ];
