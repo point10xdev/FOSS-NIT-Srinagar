@@ -1,4 +1,4 @@
-import {cards} from "../../../constants/home-events-card";
+import {eventCards} from "../../../constants/home-events-card";
 import Card from "./Card";
 const ExcitingEvents = () => {
 
@@ -13,7 +13,7 @@ const ExcitingEvents = () => {
 
         <div className="space-y-8">
             {
-                cards.map((card, index) =>(<Card key={index} index={index} event={card} />))
+                eventCards.map((card, index) =>(<Card key={index} index={index} event={card} />))
             }
       </div>
     </div> 

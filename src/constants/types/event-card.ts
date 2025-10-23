@@ -1,9 +1,10 @@
 export interface eventCard {
-  "Title": string;
+  "EventName": string;
   "Description" : string;
   "Date": string;
   "Start Time": string;
   "End Time": string;
   "Venue" : string;
-  "Card Image": string;
+  "CardImage": string;
+  "link": string
 }
