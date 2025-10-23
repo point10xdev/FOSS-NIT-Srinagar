@@ -1,3 +1,6 @@
+export interface eventCategoryCard{
+  
+}
 export const eventCategories = [
   {
     id: 1,

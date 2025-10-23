@@ -1,7 +1,7 @@
 import PageLayout from "../../../Components/PageLayout";
 import EventsPageLayout from "./EventPageLayout";
 import CategoryCard from "./CategoryCard";
-import { eventCategories } from "../../../constants/event-category"; 
+import { eventCategories } from "../../../constants/event-category-card"; 
 import { upcomingEvents } from "../../../constants/upcoming-events";
 
 export default function EventsHome() {
