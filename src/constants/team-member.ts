@@ -3,7 +3,7 @@ export const teamMembers = [
     "id": 1,
     "name": "Akshit Bhardwaj",
     "role": "Core Team Member",
-    "image": "assets/team-pfp/akshit.jpg",
+    "image": "team-pfp/akshit.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/akshitbhardwaj257448/",
       "github": "",
@@ -14,7 +14,7 @@ export const teamMembers = [
     "id": 2,
     "name": "Ashutosh",
     "role": "Core Team Member",
-    "image": "assets/team-pfp/ashutosh.jpg",
+    "image": "team-pfp/ashutosh.jpg",
     "socials": {
       "linkedin": "",
       "github": "https://github.com/point10xdev",
@@ -25,7 +25,7 @@ export const teamMembers = [
     "id": 3,
     "name": "Aman Kumar Yadav",
     "role": "Core Team Member",
-    "image": "assets/team-pfp/aman.jpg",
+    "image": "team-pfp/aman.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/aman-kumar-yadav010/",
       "github": "https://github.com/AI-Alan",
@@ -36,7 +36,7 @@ export const teamMembers = [
     "id": 4,
     "name": "Janvi Sharma",
     "role": "Core Team Member",
-    "image": "assets/team-pfp/janvi.jpg",
+    "image": "team-pfp/janvi.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/janvi-sharma018/",
       "github": "",
@@ -47,7 +47,7 @@ export const teamMembers = [
     "id": 5,
     "name": "Ankita Kuntal",
     "role": "Graphic Designer",
-    "image": "assets/team-pfp/ankitak.jpg",
+    "image": "team-pfp/ankitak.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/ankita-kuntal/",
       "github": "https://github.com/Ankita-kuntal",
@@ -58,7 +58,7 @@ export const teamMembers = [
     "id": 6,
     "name": "Vinod Akshat",
     "role": "Content Writer",
-    "image": "assets/team-pfp/akshay.jpg",
+    "image": "team-pfp/akshay.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/vinod-akshat/",
       "github": "https://github.com/akshayrivers",
@@ -69,7 +69,7 @@ export const teamMembers = [
     "id": 7,
     "name": "Ankrit Jarngal",
     "role": "Core Team Member",
-    "image": "assets/team-pfp/ankrit.jpg",
+    "image": "team-pfp/ankrit.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/vinod-akshat/",
       "github": "https://github.com/akshayrivers",
@@ -80,7 +80,7 @@ export const teamMembers = [
     "id": 8,
     "name": "Ashmitha Reddy Palreddy",
     "role": "Core Team Member",
-    "image": "assets/team-pfp/ashmitha.jpg",
+    "image": "team-pfp/ashmitha.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/ashmitha-reddy-palreddy-224733347/",
       "github": "https://github.com/ashmithapalreddy",
@@ -91,7 +91,7 @@ export const teamMembers = [
     "id": 9,
     "name": "Harman Kour",
     "role": "Core Team Member",
-    "image": "assets/team-pfp/harman.jpg",
+    "image": "team-pfp/harman.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/harmandeep-kour-609278343/",
       "github": "",
@@ -102,7 +102,7 @@ export const teamMembers = [
     "id": 10,
     "name": "Ankita Pulkit",
     "role": "Graphic Designer",
-    "image": "assets/team-pfp/ankitap.jpg",
+    "image": "team-pfp/ankitap.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/ankita-pulkit-a11b3438b/",
       "github": "",
@@ -113,7 +113,7 @@ export const teamMembers = [
     "id": 11,
     "name": "Vaneesa Kaur",
     "role": "Graphic Designer",
-    "image": "assets/team-pfp/vaneesa.jpg",
+    "image": "team-pfp/vaneesa.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/vaneesa-kour-4355b7386/",
       "github": "",
@@ -124,7 +124,7 @@ export const teamMembers = [
     "id": 12,
     "name": "Sumit Salgotra",
     "role": "Core Team Member",
-    "image": "assets/team-pfp/sumit.jpg",
+    "image": "team-pfp/sumit.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/sumit-salgotra-24912b313/",
       "github": "",
@@ -136,7 +136,7 @@ export const teamMembers = [
     "id": 13,
     "name": "Lucky Thukran",
     "role": "Core Team Member",
-    "image": "assets/team-pfp/lucky.jpg",
+    "image": "team-pfp/lucky.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/lucky-thukran-79206538a/",
       "github": "",
@@ -147,7 +147,7 @@ export const teamMembers = [
     "id": 14,
     "name": "Anupriya Tripathi",
     "role": "Volunteer",
-    "image": "assets/team-pfp/anupriya.jpg",
+    "image": "team-pfp/anupriya.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/anupriya-tripathi-b1746938b/",
       "github": "",
@@ -158,7 +158,7 @@ export const teamMembers = [
     "id": 15,
     "name": "Ishika Saraswat",
     "role": "Volunteer",
-    "image": "assets/team-pfp/ishika.jpg",
+    "image": "team-pfp/ishika.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/ishika-saraswat-22a110349/",
       "github": "",
@@ -169,7 +169,7 @@ export const teamMembers = [
     "id": 16,
     "name": "Manjot Singh",
     "role": "Volunteer",
-    "image": "assets/team-pfp/manjot.jpg",
+    "image": "team-pfp/manjot.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/manjot-singh-805031372/",
       "github": "",
@@ -180,7 +180,7 @@ export const teamMembers = [
     "id": 17,
     "name": "Manshu Kataria",
     "role": "Volunteer",
-    "image": "assets/team-pfp/manshu.jpg",
+    "image": "team-pfp/manshu.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/manshu-kataria-89b46938b/",
       "github": "",
@@ -191,7 +191,7 @@ export const teamMembers = [
     "id": 18,
     "name": "Prince Kumar",
     "role": "Volunteer",
-    "image": "assets/team-pfp/prince.jpg",
+    "image": "team-pfp/prince.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/prince-arya-0172161b8/",
       "github": "https://github.com/princedevarya",
@@ -202,7 +202,7 @@ export const teamMembers = [
     "id": 19,
     "name": "Simranjeet Singh",
     "role": "Volunteer",
-    "image": "assets/team-pfp/simranjeet.jpg",
+    "image": "team-pfp/simranjeet.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/simranjeet-singh-508bb838b/",
       "github": "https://github.com/simranjeet2569-dev",
@@ -214,7 +214,7 @@ export const teamMembers = [
     "id": 20,
     "name": "Vivek Sharma",
     "role": "Content Writer",
-    "image": "assets/team-pfp/vivek.jpg",
+    "image": "team-pfp/vivek.jpg",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/vivek-sharma-025565201/",
       "github": "",
@@ -225,7 +225,7 @@ export const teamMembers = [
   //   "id": 21,
   //   "name": "Zaid Khan",
   //   "role": "Graphic Designer",
-  //   "image": "assets/team-pfp/zaid.jpg",
+  //   "image": "team-pfp/zaid.jpg",
   //   "socials": {
   //     "linkedin": "https://www.linkedin.com/in/zaid-khan-0873591ba/",
   //     "github": "https://github.com/diaznakh",

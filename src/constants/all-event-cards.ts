@@ -8,7 +8,7 @@ export const eventCards: eventCard[] = [
     "Start Time": "TBD",
     "End Time": "TBD",
     "Venue": "TBD",
-    "CardImage": "", // placeholder image
+    "CardImage": "events/openbuildchallenge",
     "link": "/event/OpenBuild Challenge"
   },
   {

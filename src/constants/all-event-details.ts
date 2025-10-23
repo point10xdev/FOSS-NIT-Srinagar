@@ -24,8 +24,8 @@ RULES:
     startTime: "TBD",
     endTime: "TBD",
     venue: "TBD",
-    cardImage: "", // placeholder image
-    link: "/event/OpenBuild Challenge",
+    cardImage: "../../public/events/openbuildchallenge", 
+    link: "/events/OpenBuild Challenge",
   },
   {
     id: "2",
@@ -43,7 +43,7 @@ RULES:
     endTime: "12:30 PM",
     venue: "Common Hall, NIT Srinagar",
     cardImage: "", // placeholder image
-    link: "/event/FOSSConnect: The Open Source Gallery Talk",
+    link: "/events/FOSSConnect: The Open Source Gallery Talk",
   },
   {
     id: "3",
@@ -63,7 +63,7 @@ RULES:
     endTime: "1:30 PM",
     venue: "PF-2 Near Central Chinar",
     cardImage: "", // placeholder image
-    link: "/event/Git Set Go",
+    link: "/events/Git Set Go",
   },
   {
     id: "4",
@@ -83,6 +83,6 @@ RULES:
     endTime: "4:00 PM",
     venue: "PF-2 Near Central Chinar",
     cardImage: "", // placeholder image
-    link: "/event/FixIt: Certificate Generator Edition",
+    link: "/events/FixIt: Certificate Generator Edition",
   },
 ];

@@ -41,7 +41,8 @@ export default function EventDetailPage() {
           <p className="font-semibold font-figtree textShadow-md text-4xl md:text-5xl text-gray-800 leading-normal mb-4 overflow-visible">
             {event.eventname}
           </p>
-          <p className="text-lg text-gray-700">{event.description}</p>
+          {/* MODIFIED: Added whitespace-pre-line */}
+          <p className="text-lg text-gray-700 whitespace-pre-line">{event.description}</p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
