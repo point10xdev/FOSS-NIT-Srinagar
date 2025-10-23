@@ -5,6 +5,7 @@ import "aos/dist/aos.css"; // Import Aos styles
 import Home from "./pages/Home/Home";
 import Blogs from "./pages/Blogs/Blogs"
 import Events from './pages/Events/Events'
+import GetInvolved from "./pages/Get-Involved/Get-Involved";
 import Team from './pages/Team/Team' 
 import About from "./pages/About/AboutPage"; 
 import './App.css'
@@ -34,7 +35,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/blogs/*" element={<Blogs />} />
           <Route path="/events/*" element={<Events />} />
-          {/* <Route path="/get-involved" element={<Get-Involved />} /> */}
+          <Route path="/get-involved" element={<GetInvolved />} />
           <Route path="/team" element={<Team />} /> {/* Add Team Route */}
           <Route path="/about" element={<About />} /> {/* Add About Route */}
         </Routes>
