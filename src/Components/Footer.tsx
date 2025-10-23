@@ -7,7 +7,7 @@ const Footer = () => {
       style={{
         // backgroundImage:
         //   "linear-gradient(to bottom, #000000 0%, #0000009f 50%, #00000033 100%), url(/common/footer.png)",
-        backgroundImage: `url(/common/footer.png)`,
+        backgroundImage: `url(/assets/footer.png)`,
         backgroundPosition: "center center",
       }}
       className="bg-blend-overlay bg-cover bg-top h-96 relative text-white flex flex-col justify-center items-center font-playfair"

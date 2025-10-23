@@ -1,19 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import EventsHome from "./components/EventsHome";
-// --- Corrected paths below ---
-// import Competitions from "./pages/Competitions";
-// import TalksAndWorkshops from "./pages/TalksAndWorkshops";
-// import Performances from "./pages/Performances";
-// import GamingZone from "./pages/GamingZone";
-// import EventDetails from "./pages/Detailing/EventDetails";
-// import GameZoneDetails from "./pages/Detailing/GameZoneDetails";
-// import PerformanceDetails from "./pages/Detailing/PerformanceDetails";
-// import TalksAndWorkshopsDetails from "./pages/Detailing/TalksAndWorkshopsDetails";
-// import WomenTech from "./pages/women in tech/WomenTech"; // Assuming this path is correct
-// --- End corrected paths ---
-
 import { useEffect } from "react";
-import ScrollToTop from "../../Components/ScrollToTop"; // Correct: Keep this as is
+// import ScrollToTop from "../../Components/ScrollToTop"; // Correct: Keep this as is
 import PageLayout from "../../Components/PageLayout"; // Correct: Keep this as is
 
 // Placeholder components for new routes (Keep as is)
@@ -28,7 +16,7 @@ export default function Events() {
   }, []);
   return (
     <>
-      <ScrollToTop />
+      {/* <ScrollToTop /> */}
       <Routes>
         <Route path="/" element={<EventsHome />} />
         {/* Existing and new routes (Keep as is) */}

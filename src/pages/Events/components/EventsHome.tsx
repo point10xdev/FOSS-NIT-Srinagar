@@ -1,4 +1,3 @@
-// src/pages/Events/components/EventsHome.jsx
 import PageLayout from "../../../Components/PageLayout";
 import EventsPageLayout from "./EventPageLayout";
 import CategoryCard from "./CategoryCard";

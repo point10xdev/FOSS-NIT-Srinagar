@@ -2,8 +2,19 @@ import { Link } from "react-router-dom";
 import Aos from "aos"; // Keep this
 import "aos/dist/aos.css"; // Keep this
 
-const Card = ({ event, index }) => {
+interface EventCard {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+}
 
+interface CardProps {
+  event: EventCard;
+  index: number;
+}
+
+const Card = ({ event, index }: CardProps) => {
   return (
     <div
       className={`relative flex flex-col ${
