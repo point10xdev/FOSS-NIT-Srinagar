@@ -31,8 +31,8 @@ const TeamPageLayout = ({ members, title = "Our Team" }: TeamPageLayoutProps) =>
           </p>
         </div>
         
-        {/* MODIFIED: Changed lg:grid-cols-4 to lg:grid-cols-3 */}
-        <div className="px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-20 pb-10 relative justify-items-center">
+        {/* MODIFIED: Changed grid-cols-1 to grid-cols-2 and lg:grid-cols-3 to lg:grid-cols-4 */}
+        <div className="px-10 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 pt-20 pb-10 relative justify-items-center">
           
           {members.map((member) => (
               <TeamCard
@@ -49,4 +49,3 @@ const TeamPageLayout = ({ members, title = "Our Team" }: TeamPageLayoutProps) =>
   };
   
 export default TeamPageLayout;
-

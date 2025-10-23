@@ -17,7 +17,7 @@ export const teamMembers = [
     "image": "assets/team-pfp/ashutosh.jpg",
     "socials": {
       "linkedin": "",
-      "github": "",
+      "github": "https://github.com/point10xdev",
       "Fossunited": "https://fossunited.org/u/ashutosh"
     }
   },
@@ -221,15 +221,15 @@ export const teamMembers = [
       "Fossunited": "https://fossunited.org/u/viveksharma6"
     }
   },
-   {
-    "id": 21,
-    "name": "Zaid Khan",
-    "role": "Graphic Designer",
-    "image": "assets/team-pfp/zaid.jpg",
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/zaid-khan-0873591ba/",
-      "github": "https://github.com/diaznakh",
-      "Fossunited": "https://fossunited.org/u/zaid_khan"
-    }
-  },
+  //  {
+  //   "id": 21,
+  //   "name": "Zaid Khan",
+  //   "role": "Graphic Designer",
+  //   "image": "assets/team-pfp/zaid.jpg",
+  //   "socials": {
+  //     "linkedin": "https://www.linkedin.com/in/zaid-khan-0873591ba/",
+  //     "github": "https://github.com/diaznakh",
+  //     "Fossunited": "https://fossunited.org/u/zaid_khan"
+  //   }
+  // },
 ];

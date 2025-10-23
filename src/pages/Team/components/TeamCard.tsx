@@ -23,15 +23,18 @@ export default function TeamCard({ name, role, image, socials }: TeamCardProps) 
   return (
     <>
       <div
-        className="rounded-xl bg-transparent flex flex-col items-center w-[280px] md:w-[310px] px-4 py-4 mb-6"
+        // MODIFIED: Reduced widths
+        className="rounded-xl bg-transparent flex flex-col items-center w-[160px] md:w-[240px] px-4 py-4 mb-6"
       >
         <img
           loading="lazy"
-          className="w-[250px] h-[330px] md:w-[280px] md:h-[360px] object-cover overflow-hidden z-20 absolute -mt-10 rounded-xl ImgShadow transform hover:scale-105 transition duration-200 ease-in-out"
+          // MODIFIED: Reduced image widths and heights
+          className="w-[140px] h-[180px] md:w-[210px] md:h-[280px] object-cover overflow-hidden z-20 absolute -mt-10 rounded-xl ImgShadow transform hover:scale-105 transition duration-200 ease-in-out"
           src={image}
           alt={`${name} - ${role}`}
         />
-        <div className="mt-[300px] md:mt-[340px] w-full text-center">
+        {/* MODIFIED: Reduced margin-top */}
+        <div className="mt-[160px] md:mt-[250px] w-full text-center">
           <p className="font-semibold text-2xl text-white textShadow-sm font-figtree normalcase capitalize">
             {name}
           </p>
