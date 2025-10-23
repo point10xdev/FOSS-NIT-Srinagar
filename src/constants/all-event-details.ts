@@ -24,7 +24,7 @@ RULES:
     startTime: "TBD",
     endTime: "TBD",
     venue: "TBD",
-    cardImage: "../../public/events/openbuildchallenge", 
+    cardImage: "openbuildchallenge.png", 
     link: "/events/OpenBuild Challenge",
   },
   {

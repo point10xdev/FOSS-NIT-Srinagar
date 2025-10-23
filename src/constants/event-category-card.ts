@@ -32,7 +32,7 @@ export const eventCategories: eventCategoryCard[] = [
     id: 4,
     title: "Talks",
     description: "Expert presentations on cutting-edge technologies and trends.",
-    img: "/events/talks.jpg", // placeholder image
+    img: "/events/talks.png", 
     url: "/events/talks",
   },
 ];
