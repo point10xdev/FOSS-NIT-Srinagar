@@ -1,8 +1,10 @@
-import { eventCard } from "../../../constants/types/event-card";
+// MODIFIED: Import EventDetail type
+import { EventDetail } from "../../../constants/types/event-details";
 import EventCard from "./EventCard";
 
 interface EventsPageLayoutProps {
-  events: eventCard[];
+  // MODIFIED: Use EventDetail[]
+  events: EventDetail[];
   title?: string;
 }
 
@@ -20,11 +22,13 @@ const EventsPageLayout = ({ events, title = "Event List" }: EventsPageLayoutProp
           {events.map((item, index) => (
               <EventCard
                 key={index}
-                title={item["EventName"]}
-                time={item["Start Time"] + " - " + item["End Time"]}
-                venue={item["Venue"]}
-                image={`/events/${item["CardImage"]}`}
-                url={`${index}`}
+                // MODIFIED: Use properties from EventDetail
+                title={item.eventname}
+                time={`${item.startTime || ""} - ${item.endTime || ""}`}
+                venue={item.venue || "Venue TBD"}
+                image={`/events/${item.cardImage}`}
+                // MODIFIED: Use event name in URL as requested
+                url={`/events/${item.eventname}`}
               />
           ))}
         </div>
@@ -34,4 +38,3 @@ const EventsPageLayout = ({ events, title = "Event List" }: EventsPageLayoutProp
 
   
 export default EventsPageLayout;
-

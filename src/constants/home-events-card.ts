@@ -8,7 +8,8 @@ export const eventCards: eventCard[] = [
     "Start Time": "10:00 AM",
     "End Time": "4:00 PM",
     "Venue": "Main Hall, NIT Srinagar",
-    "Card Image": "", // placeholder image
+    "CardImage": "", // placeholder image
+    "link": "/event/OpenBuild Challenge"
   },
   {
     "EventName": "FOSSConnect: The Open Source Gallery Talk",
@@ -17,7 +18,8 @@ export const eventCards: eventCard[] = [
     "Start Time": "2:00 PM",
     "End Time": "5:00 PM",
     "Venue": "Auditorium, NIT Srinagar",
-    "Card Image": "", // placeholder image
+    "CardImage": "", // placeholder image
+    "link": "/event/FOSSConnect: The Open Source Gallery Talk"
   },
   {
     "EventName": "Git Set Go",
@@ -26,7 +28,8 @@ export const eventCards: eventCard[] = [
     "Start Time": "11:00 AM",
     "End Time": "3:00 PM",
     "Venue": "Lab 3, NIT Srinagar",
-    "Card Image": "", // placeholder image
+    "CardImage": "", // placeholder image
+    "link": "/event/Git Set Go"
   },
   {
     "EventName": "FixIt: Certificate Generator Edition",
@@ -35,6 +38,7 @@ export const eventCards: eventCard[] = [
     "Start Time": "10:00 AM",
     "End Time": "4:00 PM",
     "Venue": "Lab 5, NIT Srinagar",
-    "Card Image": "", // placeholder image
-  },
+    "CardImage": "", // placeholder image
+    "link": "/event/FixIt: Certificate Generator Edition"
+  }
 ];
