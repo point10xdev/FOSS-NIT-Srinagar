@@ -1,7 +1,12 @@
-export interface eventCategoryCard{
-  
+export interface eventCategoryCard {
+  id: number;
+  title: string;
+  description: string;
+  img: string;
+  url: string;
 }
-export const eventCategories = [
+
+export const eventCategories: eventCategoryCard[] = [ 
   {
     id: 1,
     title: "Workshops",

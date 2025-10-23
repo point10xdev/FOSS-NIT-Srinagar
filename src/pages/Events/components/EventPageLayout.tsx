@@ -1,18 +1,8 @@
+import { eventCard } from "../../../constants/types/event-card";
 import EventCard from "./EventCard";
 
-// Define the prop interfaces based on mock data in EventsHome.jsx
-interface Event {
-  "Event Name": string;
-  "Description" : string;
-  "Date": string;
-  "Start Time": string;
-  "End Time": string;
-  "Venue" : string;
-  "Card Image": string;
-}
-
 interface EventsPageLayoutProps {
-  events: Event[];
+  events: eventCard[];
   title?: string;
 }
 
@@ -30,10 +20,10 @@ const EventsPageLayout = ({ events, title = "Event List" }: EventsPageLayoutProp
           {events.map((item, index) => (
               <EventCard
                 key={index}
-                title={item["Event Name"]}
+                title={item["EventName"]}
                 time={item["Start Time"] + " - " + item["End Time"]}
                 venue={item["Venue"]}
-                image={`/events/${item["Card Image"]}`}
+                image={`/events/${item["CardImage"]}`}
                 url={`${index}`}
               />
           ))}

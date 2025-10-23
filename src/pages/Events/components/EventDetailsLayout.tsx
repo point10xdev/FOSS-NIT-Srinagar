@@ -1,20 +1,10 @@
 import PageLayout from "../../../Components/PageLayout";
+import { EventData } from "../../../constants/types/event-details"; // <-- ADDED
 
-// Define the interface for the 'data' prop based on its usage
-interface EventData {
-  "Event Name": string;
-  Description: string;
-  "Start Time": string;
-  "End Time": string;
-  Day: string | number;
-  "Lead Name": string;
-  "Lead Contact Number": string;
-  // Add other properties passed to TabView if known
-  [key: string]: any; // Allow other properties for TabView
-}
+// REMOVED local 'EventData' interface
 
 interface EventDetailsLayoutProps {
-  data: EventData;
+  data: EventData; // <-- Now uses imported type
 }
 
 export default function EventDetailsLayout({ data }: EventDetailsLayoutProps) {
@@ -62,4 +52,3 @@ export default function EventDetailsLayout({ data }: EventDetailsLayoutProps) {
     </PageLayout>
   );
 }
-
