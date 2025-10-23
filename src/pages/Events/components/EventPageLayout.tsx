@@ -15,16 +15,13 @@ const EventsPageLayout = ({ events, title = "Event List" }: EventsPageLayoutProp
           </p>
         </div>
         <div className="px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8 justify-items-center pt-16 pb-10 relative">
-          {/* MODIFIED: Added index to map and passed it as a prop */}
+          
+          
           {events.map((item, index) => (
               <EventCard
                 key={item.id}
-                index={index} // <-- Pass index here
-                title={item.eventname}
-                time={item.startTime && item.endTime ? `${item.startTime} - ${item.endTime}` : (item.startTime || "Time TBD")}
-                venue={item.venue || "Venue TBD"}
-                image={item.cardImage ? `/events/${item.cardImage}` : "/events/meme.jpg"}
-                url={`/events/${item.eventname}`}
+                index={index}
+                event={item} 
               />
           ))}
         </div>

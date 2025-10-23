@@ -1,16 +1,14 @@
 import { Link } from "react-router-dom";
-import Aos from "aos"; // Keep this
-import "aos/dist/aos.css"; // Keep this
+import Aos from "aos";
+import "aos/dist/aos.css";
+// ADDED: Import the EventDetail type
+import { EventDetail } from "../../../constants/types/event-details";
 
-interface EventCard {
-  EventName: string;
-  Description: string;
-  CardImage: string;
-  link: string; // Keep this, although we'll generate the correct link dynamically
-}
+// REMOVED: Old inline EventCard interface
 
+// MODIFIED: Use EventDetail for the 'event' prop
 interface CardProps {
-  event: EventCard;
+  event: EventDetail;
   index: number;
 }
 
@@ -27,8 +25,10 @@ const Card = ({ event, index }: CardProps) => {
         className="w-full sm:max-w-sm"
       >
         <img
-          src={event.CardImage}
-          alt={event.EventName}
+          // MODIFIED: Use event.cardImage and add a fallback
+          src={event.cardImage || "/events/meme.jpg"} 
+          // MODIFIED: Use event.eventname
+          alt={event.eventname} 
           className="w-full h-[460px] object-cover"
         />
       </div>
@@ -39,22 +39,22 @@ const Card = ({ event, index }: CardProps) => {
       >
         <div data-aos={index % 2 === 0 ? "fade-left" : "fade-right"} className="p-6 ShadowLarge md:p-8 lg:p-10 bg-background h-full">
           <div className="text-2xl font-figtree sm:text-3xl font-semibold mb-4 text-gray-700 textShadow-sm overflow-visible">
-            {event.EventName}
+            {/* MODIFIED: Use event.eventname */}
+            {event.eventname}
           </div>
-          <p className="mb-6 md:mb-8">{event.Description}</p>
-          {/* --- MODIFIED LINE --- */}
+          {/* MODIFIED: Use event.description */}
+          <p className="mb-6 md:mb-8">{event.description}</p>
           <Link
-            // Construct the URL using /events/ and the event name
-            to={`/events/${event.EventName}`} 
+            // MODIFIED: Use event.eventname for the dynamic link
+            to={`/events/${event.eventname}`} 
             className="px-3 md:px-6 py-3 ShadowBlur font-kodeMono text-sm md:text-base rounded-md font-medium text-gray-800 bg-primary border border-primary text-center"
           >
             EXPLORE
           </Link>
-          {/* --- END OF MODIFIED LINE --- */}
         </div>
       </div>
     </div>
   );
 };
 
-export default Card;  
+export default Card;

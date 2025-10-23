@@ -1,5 +1,7 @@
-import {eventCards} from "../../../constants/home-events-card";
+// MODIFIED: Import the single source of truth
+import { eventDetails } from "../../../constants/all-event-details";
 import Card from "./Card";
+
 const ExcitingEvents = () => {
 
   return (
@@ -13,7 +15,8 @@ const ExcitingEvents = () => {
 
         <div className="space-y-8">
             {
-                eventCards.map((card, index) =>(<Card key={index} index={index} event={card} />))
+                // MODIFIED: Use eventDetails
+                eventDetails.map((card, index) =>(<Card key={index} index={index} event={card} />))
             }
       </div>
     </div> 
@@ -21,4 +24,3 @@ const ExcitingEvents = () => {
 };
 
 export default ExcitingEvents;
-
