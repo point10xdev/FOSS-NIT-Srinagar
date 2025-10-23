@@ -1,4 +1,4 @@
-import {cards} from "../../../constants/home-events";
+import {cards} from "../../../constants/home-events-card";
 import Card from "./Card";
 const ExcitingEvents = () => {
 

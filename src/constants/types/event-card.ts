@@ -1,5 +1,5 @@
 export interface eventCard {
-  "Event Name": string;
+  "Title": string;
   "Description" : string;
   "Date": string;
   "Start Time": string;
