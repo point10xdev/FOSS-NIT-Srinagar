@@ -41,7 +41,7 @@ export const eventDetails: EventDetail[] = [
     id: "4",
     eventname: "FixIt: Certificate Generator Edition",
     description: "A contribution sprint around an open-source Certificate Generator project — fix issues, add features, and ship your improvements in style!",
-    category: "Workshops",
+    category: "Hackathons",
     Date: "2025-11-18",
     startTime: "10:00 AM",
     endTime: "4:00 PM",

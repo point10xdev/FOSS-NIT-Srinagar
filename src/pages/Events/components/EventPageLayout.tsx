@@ -1,33 +1,29 @@
-// MODIFIED: Import EventDetail type
 import { EventDetail } from "../../../constants/types/event-details";
 import EventCard from "./EventCard";
 
 interface EventsPageLayoutProps {
-  // MODIFIED: Use EventDetail[]
   events: EventDetail[];
   title?: string;
 }
 
-// Add 'title' prop with a default value
 const EventsPageLayout = ({ events, title = "Event List" }: EventsPageLayoutProps) => {
     return (
-      // MODIFIED: Removed "bg-background ShadowLarge"
       <div className="">
-        <div className="font-playfair px-8 pt-8 ">
+        <div className="font-playfair px-4 sm:px-8 pt-8 ">
           <p className="text-gray-700 textShadow-md font-extrabold font-figtree text-4xl md:text-5xl leading-normal">
-            {title} {/* Use dynamic title */}
+            {title}
           </p>
         </div>
-        <div className="px-10 flex flex-wrap justify-center gap-8 pt-20 pb-10 relative ">
+        <div className="px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8 justify-items-center pt-16 pb-10 relative">
+          {/* MODIFIED: Added index to map and passed it as a prop */}
           {events.map((item, index) => (
               <EventCard
-                key={index}
-                // MODIFIED: Use properties from EventDetail
+                key={item.id}
+                index={index} // <-- Pass index here
                 title={item.eventname}
-                time={`${item.startTime || ""} - ${item.endTime || ""}`}
+                time={item.startTime && item.endTime ? `${item.startTime} - ${item.endTime}` : (item.startTime || "Time TBD")}
                 venue={item.venue || "Venue TBD"}
-                image={`/events/${item.cardImage}`}
-                // MODIFIED: Use event name in URL as requested
+                image={item.cardImage ? `/events/${item.cardImage}` : "/events/meme.jpg"}
                 url={`/events/${item.eventname}`}
               />
           ))}
@@ -36,5 +32,4 @@ const EventsPageLayout = ({ events, title = "Event List" }: EventsPageLayoutProp
     );
   };
 
-  
 export default EventsPageLayout;

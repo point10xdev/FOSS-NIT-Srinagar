@@ -6,7 +6,7 @@ interface EventCard {
   EventName: string;
   Description: string;
   CardImage: string;
-  link: string;
+  link: string; // Keep this, although we'll generate the correct link dynamically
 }
 
 interface CardProps {
@@ -42,16 +42,19 @@ const Card = ({ event, index }: CardProps) => {
             {event.EventName}
           </div>
           <p className="mb-6 md:mb-8">{event.Description}</p>
+          {/* --- MODIFIED LINE --- */}
           <Link
-            to={event.link}
+            // Construct the URL using /events/ and the event name
+            to={`/events/${event.EventName}`} 
             className="px-3 md:px-6 py-3 ShadowBlur font-kodeMono text-sm md:text-base rounded-md font-medium text-gray-800 bg-primary border border-primary text-center"
           >
             EXPLORE
           </Link>
+          {/* --- END OF MODIFIED LINE --- */}
         </div>
       </div>
     </div>
   );
 };
 
-export default Card;
+export default Card;  
