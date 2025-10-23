@@ -8,9 +8,7 @@ import Events from './pages/Events/Events'
 import Team from './pages/Team/Team' 
 import About from "./pages/About/AboutPage"; 
 import './App.css'
-// import Contact from "./pages/contact/Contact";
-// import Schedule from "./pages/schedule/Schedule";
-// import ScrollToTop from "./Components/ScrollToTop";
+import ScrollToTop from "./Components/ScrollToTop";
 
 
 
@@ -21,7 +19,7 @@ function App() {
     Aos.init({
       duration: 1000,
       anchorPlacement: "top-bottom", // This fixes the "pop-in"
-      disable: "Phone",
+      disable: "phone",
       startEvent: "DOMContentLoaded",
       easing: "ease-out",
       mirror: true,
@@ -31,7 +29,7 @@ function App() {
   return (
     <>
       <Router>
-      {/* <ScrollToTop /> */}
+      {<ScrollToTop />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blogs/*" element={<Blogs />} />

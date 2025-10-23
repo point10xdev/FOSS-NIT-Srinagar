@@ -1,12 +1,5 @@
-// src/pages/Team/components/TeamPageLayout.tsx
 import TeamCard from "./TeamCard.tsx";
-
-// Define interfaces for the props
-interface Socials {
-  linkedin?: string;
-  github?: string;
-  twitter?: string;
-}
+import { type Socials } from "./TeamCard.tsx";
 
 interface Member {
   id: number;
@@ -21,18 +14,21 @@ interface TeamPageLayoutProps {
   title?: string;
 }
 
-const TeamPageLayout = ({ members, title = "Our Team" }: TeamPageLayoutProps) => {
+const TeamPageLayout = ({ members, title = "" }: TeamPageLayoutProps) => {
     return (
-      // This wrapper is now transparent
+      // This wrapper is transparent
       <div className="">
-        <div className="font-playfair px-8 pt-8 ">
+
+        {/* If We need subheadings in the future */}
+        {/* <div className="font-playfair px-8 pt-8 ">
           <p className="text-gray-700 textShadow-md font-extrabold font-figtree text-4xl md:text-5xl leading-normal">
             {title}
           </p>
-        </div>
+        </div> */}
         
-        {/* MODIFIED: Changed grid-cols-1 to grid-cols-2 and lg:grid-cols-3 to lg:grid-cols-4 */}
-        <div className="px-10 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 pt-20 pb-10 relative justify-items-center">
+        {/* <div className="px-10 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 pt-20 pb-10 relative justify-items-center"> */}
+
+        <div className="px-10 grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8 pb-10 relative justify-items-center">
           
           {members.map((member) => (
               <TeamCard
