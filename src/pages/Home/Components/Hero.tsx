@@ -44,10 +44,10 @@ function Hero() {
   });
 
   // scrambling text animation
-  const [scrambledText, setScrambledText] = useState("FOSS Srinagar");
+  const [scrambledText, setScrambledText] = useState("F<>SS Srinagar");
   const textRef = useRef(null);
   const letters = "abcdefghijklmnopqrstuvwxyz";
-  const originalText = "FOSS Srinagar";
+  const originalText = "F<>SS Srinagar";
 
   const scrambleText = useCallback(() => {
     let iteration = 0;
