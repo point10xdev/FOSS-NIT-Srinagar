@@ -28,7 +28,7 @@ export const eventCards: eventCard[] = [
     "Start Time": "12:30 PM",
     "End Time": "1:30 PM",
     "Venue": "PF-2 Near Central Chinar",
-    "CardImage": "", // placeholder image
+    "CardImage": "/events/Git Set Go", // placeholder image
     "link": "/event/Git Set Go"
   },
   {
