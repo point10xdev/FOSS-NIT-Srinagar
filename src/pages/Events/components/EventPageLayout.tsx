@@ -3,11 +3,12 @@ import EventCard from "./EventCard";
 // Define the prop interfaces based on mock data in EventsHome.jsx
 interface Event {
   "Event Name": string;
+  "Description" : string;
+  "Date": string;
   "Start Time": string;
   "End Time": string;
-  Venue: string;
+  "Venue" : string;
   "Card Image": string;
-  Day: string;
 }
 
 interface EventsPageLayoutProps {

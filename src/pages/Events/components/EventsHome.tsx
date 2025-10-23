@@ -2,26 +2,7 @@ import PageLayout from "../../../Components/PageLayout";
 import EventsPageLayout from "./EventPageLayout";
 import CategoryCard from "./CategoryCard";
 import { eventCategories } from "../../../constants/event-category"; 
-
-// Mock data for upcoming events - you can replace this with a data fetch
-const upcomingEvents = [
-  {
-    "Event Name": "Intro to Git & GitHub",
-    "Start Time": "10:00 AM",
-    "End Time": "12:00 PM",
-    "Venue": "CSE Conference Hall",
-    "Card Image": "git-github.jpg", // placeholder
-    "Day": "1"
-  },
-  {
-    "Event Name": "Linux Install Fest",
-    "Start Time": "1:00 PM",
-    "End Time": "4:00 PM",
-    "Venue": "Mac Lab 1",
-    "Card Image": "linux-fest.jpg", // placeholder
-    "Day": "1"
-  }
-];
+import { upcomingEvents } from "../../../constants/upcoming-events";
 
 export default function EventsHome() {
   return (
